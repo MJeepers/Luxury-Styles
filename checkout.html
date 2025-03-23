@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Luxury Styles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Luxury Styles</h1>
+        <img src="luxury-styles-logo.png" alt="Luxury Styles Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html" class="cart-icon">🛒 <span id="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="checkout-section">
+        <h2>Checkout</h2>
+        <div id="checkout-items">
+            <!-- Checkout items will be dynamically added here -->
+        </div>
+        <p>Total: $<span id="checkout-total">0.00</span></p>
+        <form id="payment-form">
+            <div id="card-element">
+                <!-- Stripe Card Element will be inserted here -->
+            </div>
+            <button id="submit-payment">Pay Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Luxury Styles. All Rights Reserved.</p>
+    </footer>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

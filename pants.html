@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Styles - Pants</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Luxury Styles</h1>
+        <img src="luxury-styles-logo.png" alt="Luxury Styles Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html" class="cart-icon">🛒 <span id="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- Watches Section -->
+<section id="watches" class="product-section">
+    <div class="product-grid">
+        <!-- 68 Watches -->
+        
+        <!-- Watches -->
+        " + "
+        ".join([f'''<div class="product-card">
+            <img src="watch{i}.jpg" alt="Watch {i}">
+            <div>
+                <h3>Watch {i}</h3>
+                <p>$1000</p>
+                <button 
+                    data-id="{i}" 
+                    data-name="Watch {i}" 
+                    data-price="1000" 
+                    data-image="watch{i}.jpg"
+                >
+                    Add to Cart
+                </button>
+            </div>
+        </div>''' for i in range(1, 69)]) + "
+    </div>
+</section>
+
+<!-- Perfume Section -->
+<section id="perfume" class="product-section">
+    <div class="product-grid">
+        <!-- 120 Perfumes -->
+        " + "
+        ".join([f'''<div class="product-card">
+            <img src="perfume{i}.jpg" alt="Perfume {i}">
+            <div>
+                <h3>Perfume {i}</h3>
+                <p>$50</p>
+                <button 
+                    data-id="{i+100}" 
+                    data-name="Perfume {i}" 
+                    data-price="50" 
+                    data-image="perfume{i}.jpg"
+                >
+                    Add to Cart
+                </button>
+            </div>
+        </div>''' for i in range(1, 121)]) + "
+    </div>
+</section>
+
+<!-- Bags Section -->
+<section id="bags" class="product-section">
+    <div class="product-grid">
+        <!-- 14 Bags -->
+        " + "
+        ".join([f'''<div class="product-card">
+            <img src="bag{i}.jpg" alt="Bag {i}">
+            <div>
+                <h3>Bag {i}</h3>
+                <p>$200</p>
+                <button 
+                    data-id="{i+220}" 
+                    data-name="Bag {i}" 
+                    data-price="200" 
+                    data-image="bag{i}.jpg"
+                >
+                    Add to Cart
+                </button>
+            </div>
+        </div>''' for i in range(1, 15)]) + "
+    </div>
+</section>
+
+<!-- Shoes Section -->
+<section id="shoes" class="product-section">
+    <div class="product-grid">
+        <!-- 173 Shoes -->
+        " + "
+        ".join([f'''<div class="product-card">
+            <img src="shoes{i}.jpg" alt="Shoes {i}">
+            <div>
+                <h3>Shoes {i}</h3>
+                <p>$150</p>
+                <button 
+                    data-id="{i+234}" 
+                    data-name="Shoes {i}" 
+                    data-price="150" 
+                    data-image="shoes{i}.jpg"
+                >
+                    Add to Cart
+                </button>
+            </div>
+        </div>''' for i in range(1, 174)]) + "
+    </div>
+</section>
+
+<!-- Hoodies & Shirts Section -->
+<section id="hoodies-shirts" class="product-section">
+    <div class="product-grid">
+        <!-- 70 Hoodies & Shirts -->
+        " + "
+        ".join([f'''<div class="product-card">
+            <img src="hoodie{i}.jpg" alt="Hoodie/Shirt {i}">
+            <div>
+                <h3>Hoodie/Shirt {i}</h3>
+                <p>$60</p>
+                <button 
+                    data-id="{i+407}" 
+                    data-name="Hoodie/Shirt {i}" 
+                    data-price="60" 
+                    data-image="hoodie{i}.jpg"
+                >
+                    Add to Cart
+                </button>
+            </div>
+        </div>''' for i in range(1, 71)]) + "
+    </div>
+</section>
+
+<!-- Pants & Shorts Section -->
+<section id="pants-shorts" class="product-section">
+    <div class="product-grid">
+        <!-- 21 Pants & Shorts -->
+        " + "
+        ".join([f'''<div class="product-card">
+            <img src="pants{i}.jpg" alt="Pants/Shorts {i}">
+            <div>
+                <h3>Pants/Shorts {i}</h3>
+                <p>$40</p>
+                <button 
+                    data-id="{i+477}" 
+                    data-name="Pants/Shorts {i}" 
+                    data-price="40" 
+                    data-image="pants{i}.jpg"
+                >
+                    Add to Cart
+                </button>
+            </div>
+        </div>''' for i in range(1, 22)]) + "
+    </div>
+</section>
+
+    <footer>
+        <p>&copy; 2025 Luxury Styles. All Rights Reserved.</p>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>

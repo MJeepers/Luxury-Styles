@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Styles - Watches</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Luxury Styles</h1>
+        <img src="luxury-styles-logo.png" alt="Luxury Styles Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html" class="cart-icon">🛒 <span id="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-section">
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="watch1.jpg" alt="Rolex Submariner">
+                <div>
+                    <h3>Rolex Submariner</h3>
+                    <p>$12,000</p>
+                    <button 
+                        data-id="1" 
+                        data-name="Rolex Submariner" 
+                        data-price="12000" 
+                        data-image="watch1.jpg"
+                    >
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="watch2.jpg" alt="Audemars Piguet">
+                <div>
+                    <h3>Audemars Piguet</h3>
+                    <p>$25,000</p>
+                    <button 
+                        data-id="2" 
+                        data-name="Audemars Piguet" 
+                        data-price="25000" 
+                        data-image="watch2.jpg"
+                    >
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="watch3.jpg" alt="Patek Philippe">
+                <div>
+                    <h3>Patek Philippe</h3>
+                    <p>$30,000</p>
+                    <button 
+                        data-id="3" 
+                        data-name="Patek Philippe" 
+                        data-price="30000" 
+                        data-image="watch3.jpg"
+                    >
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Luxury Styles. All Rights Reserved.</p>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>
